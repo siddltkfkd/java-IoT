@@ -1,3 +1,5 @@
+package main;
+
 import test.Dice;
 
 public class DiceCalculator {
