@@ -46,7 +46,7 @@ public class Main {
         for (int i=0; i<value.length-1; i++) {
             answer = answer * 2 + Integer.parseInt(value[i+1]);
         }
-        // System.out.println(answer);
+        System.out.println(answer);
         return answer;
     }
 }
