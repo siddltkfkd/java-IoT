@@ -5,9 +5,7 @@ import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.ConnectException;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
 public class Quiz06 {
     public static void main(String[] args) {
@@ -40,12 +38,8 @@ public class Quiz06 {
                 }
             }
 
-        } catch (UnknownHostException e) {
-            // System.out.println(e);
-        } catch (ConnectException e) {
-            System.err.println(host + " : " + port + "에 연결할 수 없습니다.");
-        } catch (IOException ignore) {
-            // System.out.println(e);
+        } catch (IOException e) {
+            System.out.println(e);
         }
     }
 }
